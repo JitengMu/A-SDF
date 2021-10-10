@@ -1,0 +1,38 @@
+{
+  "Description" : [ "This experiment learns a shape representation for stapler",
+                    "using data from Shape2Motion." ],
+  "DataSource" : "data",
+  "TrainSplit" : "examples/splits/sm_stapler_6_angle_train.json",
+  "TestSplit" : "examples/splits/sm_stapler_6_angle_test.json",
+  "NetworkArch" : "ASDF_decoder",
+  "CodeLength" : 253,
+  "NumEpochs" : 1001,
+  "SnapshotFrequency" : 500,
+  "AdditionalSnapshots" : [ 50, 100, 200, 300, 400, 500 ],
+  "LearningRateSchedule" : [
+    {
+      "Type" : "Step",
+      "Initial" : 0.0005,
+      "Interval" : 250,
+      "Factor" : 0.5
+    },
+    {
+      "Type" : "Step",
+      "Initial" : 0.001,
+      "Interval" : 250,
+      "Factor" : 0.5
+    }],
+  "SamplesPerScene" : 16000,
+  "ScenesPerBatch" : 32,
+  "DataLoaderThreads" : 12,
+  "ClampingDistance" : 0.1,
+  "CodeRegularization" : true,
+  "CodeRegularizationLambda" : 1e-4,
+  "CodeBound" : 1.0,
+  "Articulation" : true,
+  "NumInstances" : 33,
+  "NumAtcParts" : 1,
+  "TrainWithParts" : false,
+  "Class" : "stapler"
+}
+

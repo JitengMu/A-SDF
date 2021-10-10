@@ -1,0 +1,6 @@
+[submodule "third-party/cnpy"]
+	path = third-party/cnpy
+	url = https://github.com/rogersce/cnpy.git
+[submodule "dataset_generation/Manifold"]
+	path = dataset_generation/Manifold
+	url = git://github.com/hjwdzh/Manifold
