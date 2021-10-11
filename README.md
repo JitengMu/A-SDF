@@ -1,6 +1,19 @@
 # A-SDF: Learning Disentangled Signed Distance Functions for Articulated Shape Representation (ICCV 2021)
 
-Code for [A-SDF: Learning Disentangled Signed Distance Functions for Articulated Shape Representation (ICCV 2021)](https://arxiv.org/abs/2104.07645). The code is developed based on the Pytorch framework(1.6.0) with python 3.7.6. This repo includes training code and generated data from [shape2motion](http://motiondataset.zbuaa.com). Please see the [project page](https://jitengmu.github.io/A-SDF/) for more information.
+This repository contains the official implementation for A-SDF introduced in the following paper: [A-SDF: Learning Disentangled Signed Distance Functions for Articulated Shape Representation (ICCV 2021)](https://arxiv.org/abs/2104.07645). The code is developed based on the Pytorch framework(1.6.0) with python 3.7.6. This repo includes training code and generated data from [shape2motion](http://motiondataset.zbuaa.com).
+
+[**A-SDF: Learning Disentangled Signed Distance Functions for Articulated Shape Representation (ICCV 2021)**](https://arxiv.org/abs/2104.07645)
+<br>
+[*JitengMu*](https://jitengmu.github.io/), [*Weichao Qiu*](https://weichaoqiu.com/), [*Adam Kortylewski*](https://adamkortylewski.com/), [*Alan Yuille*](http://www.cs.jhu.edu/~ayuille/), [*Nuno Vasconcelos*](http://www.svcl.ucsd.edu/~nuno/), [*Xiaolong Wang*](https://xiaolonw.github.io/)
+<br>
+ICCV 2021
+
+The project page with more details is at [https://jitengmu.github.io/A-SDF/](https://jitengmu.github.io/A-SDF/).
+
+<div align="center">
+<img src="figs/art.gif" width="75%">
+</div>
+
 
 ## Citation
 
@@ -96,7 +109,7 @@ python eval.py -e examples/laptop/laptop-asdf/ -c 1000 -m inter_testset
 
 ## (e) Partial Point Cloud
 
-To use a trained model to reconstruct and generate explicit meshes from partial pointcloud: (1) download the partial point clouds dataset `laptop-1/3-view-0.025.zip` from [dataset](https://nextcloud.nautilus.optiputer.net/s/Ecr6ZHokBStAgST) first and (2) put the laptop checkpoint trained on shape2motion in `examples/laptop/laptop-asdf-1/2-view/`, (3) then run the following scripts, where `--dataset shape2motion-1-view` for partial point clouds generated from a single depth image and `--dataset shape2motion-2-view` for the case generated from two depth images of different view points, `-m` can be one of `recon_testset/recon_testset_ttt/generation/generation_ttt`, similar to previous experiments.
+To use a trained model to reconstruct and generate explicit meshes from partial pointcloud: (1) download the partial point clouds dataset `laptop-1/2-view-0.025.zip` from [dataset](https://nextcloud.nautilus.optiputer.net/s/Ecr6ZHokBStAgST) first and (2) put the laptop checkpoint trained on shape2motion in `examples/laptop/laptop-asdf-1/2-view/`, (3) then run the following scripts, where `--dataset shape2motion-1-view` for partial point clouds generated from a single depth image and `--dataset shape2motion-2-view` for the case generated from two depth images of different view points, `-m` can be one of `recon_testset/recon_testset_ttt/generation/generation_ttt`, similar to previous experiments.
 ```
 python test.py -e examples/laptop/laptop-asdf-1-view/ -c 1000 -m recon_testset_ttt/generation_ttt --dataset shape2motion-1-view
 ```
