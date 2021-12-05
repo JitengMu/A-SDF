@@ -1,8 +1,8 @@
 # A-SDF: Learning Disentangled Signed Distance Functions for Articulated Shape Representation (ICCV 2021)
 
-This repository contains the official implementation for A-SDF introduced in the following paper: [A-SDF: Learning Disentangled Signed Distance Functions for Articulated Shape Representation (ICCV 2021)](https://arxiv.org/abs/2104.07645). The code is developed based on the Pytorch framework(1.6.0) with python 3.7.6. This repo includes training code and generated data from [shape2motion](http://motiondataset.zbuaa.com).
+This repository contains the official implementation for A-SDF introduced in the following paper: [A-SDF: Learning Disentangled Signed Distance Functions for Articulated Shape Representation (ICCV 2021)](https://openaccess.thecvf.com/content/ICCV2021/papers/Mu_A-SDF_Learning_Disentangled_Signed_Distance_Functions_for_Articulated_Shape_Representation_ICCV_2021_paper.pdf). The code is developed based on the Pytorch framework(1.6.0) with python 3.7.6. This repo includes training code and generated data from [shape2motion](http://motiondataset.zbuaa.com).
 
-[**A-SDF: Learning Disentangled Signed Distance Functions for Articulated Shape Representation (ICCV 2021)**](https://arxiv.org/abs/2104.07645)
+[**A-SDF: Learning Disentangled Signed Distance Functions for Articulated Shape Representation (ICCV 2021)**](https://openaccess.thecvf.com/content/ICCV2021/papers/Mu_A-SDF_Learning_Disentangled_Signed_Distance_Functions_for_Articulated_Shape_Representation_ICCV_2021_paper.pdf)
 <br>
 [*JitengMu*](https://jitengmu.github.io/), [*Weichao Qiu*](https://weichaoqiu.com/), [*Adam Kortylewski*](https://adamkortylewski.com/), [*Alan Yuille*](http://www.cs.jhu.edu/~ayuille/), [*Nuno Vasconcelos*](http://www.svcl.ucsd.edu/~nuno/), [*Xiaolong Wang*](https://xiaolonw.github.io/)
 <br>
