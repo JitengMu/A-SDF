@@ -110,7 +110,7 @@ python eval.py -e examples/laptop/laptop-asdf/ -c 1000 -m inter_testset
 
 ## (e) Partial Point Cloud
 
-To use a trained model to reconstruct and generate explicit meshes from partial pointcloud: (1) download the partial point clouds dataset `laptop-1/2-view-0.025.zip` from [dataset](https://nextcloud.nautilus.optiputer.net/s/Ecr6ZHokBStAgST) first and (2) put the laptop checkpoint trained on shape2motion in `examples/laptop/laptop-asdf-1/2-view/`, (3) then run the following scripts, where `--dataset shape2motion-1-view` for partial point clouds generated from a single depth image and `--dataset shape2motion-2-view` for the case generated from two depth images of different view points, `-m` can be one of `recon_testset/recon_testset_ttt/generation/generation_ttt`, similar to previous experiments.
+To use a trained model to reconstruct and generate explicit meshes from partial pointcloud: (1) download the partial point clouds dataset `laptop-1/2-view-0.025.zip` from [dataset](https://nextcloud.nrp-nautilus.io/s/Ecr6ZHokBStAgST) first and (2) put the laptop checkpoint trained on shape2motion in `examples/laptop/laptop-asdf-1/2-view/`, (3) then run the following scripts, where `--dataset shape2motion-1-view` for partial point clouds generated from a single depth image and `--dataset shape2motion-2-view` for the case generated from two depth images of different view points, `-m` can be one of `recon_testset/recon_testset_ttt/generation/generation_ttt`, similar to previous experiments.
 ```
 python test.py -e examples/laptop/laptop-asdf-1-view/ -c 1000 -m recon_testset_ttt/generation_ttt --dataset shape2motion-1-view
 ```
@@ -121,7 +121,7 @@ python eval.py -e examples/laptop/laptop-asdf-1-view/ -c 1000 -m recon_testset_t
 
 
 ## (f) RBO dataset
-To test a model on the [rbo dataset](https://tu-rbo.github.io/articulated-objects/): (1) download the generated partial point clouds of the laptop class from the rbo dataset --- `rbo_laptop_release_test.zip` from [dataset](https://nextcloud.nautilus.optiputer.net/s/Ecr6ZHokBStAgST) first, (2) put the laptop checkpoint trained on shape2motion in `examples/laptop/laptop-asdf-rbo/`, (3) then run the following,
+To test a model on the [rbo dataset](https://tu-rbo.github.io/articulated-objects/): (1) download the generated partial point clouds of the laptop class from the rbo dataset --- `rbo_laptop_release_test.zip` from [dataset](https://nextcloud.nrp-nautilus.io/s/Ecr6ZHokBStAgST) first, (2) put the laptop checkpoint trained on shape2motion in `examples/laptop/laptop-asdf-rbo/`, (3) then run the following,
 
 ```
 python test.py -e examples/laptop/laptop-asdf-rbo/ -m recon_testset_ttt/generation_ttt -c 1000 --dataset rbo
