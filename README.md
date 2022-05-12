@@ -28,7 +28,8 @@ If you find our code or method helpful, please use the following BibTex entry.
                Xiaolong Wang},
   title     = {{A-SDF:} Learning Disentangled Signed Distance Functions for Articulated
                Shape Representation},
-  journal    = {arXiv preprint arXiv:2104.07645 },
+  booktitle = {ICCV},
+  pages = {12981--12991},
   year      = {2021},
 }
 ```
