@@ -36,7 +36,7 @@ If you find our code or method helpful, please use the following BibTex entry.
 
 ## Data preparation and layout
 
-Please 1) download [dataset](https://nextcloud.nautilus.optiputer.net/s/Ecr6ZHokBStAgST) and put data in the `data` directory, and 2) download [checkpoints](https://nextcloud.nautilus.optiputer.net/s/Ecr6ZHokBStAgST) and put the checkpoint in the corresponding `example/<category>` directory, e.g. it should look like `examples/laptop/laptop-asdf/Model_Parameters/1000.pth`.
+Please 1) download [dataset](https://nextcloud.nrp-nautilus.io/s/Ecr6ZHokBStAgST) and put data in the `data` directory, and 2) download [checkpoints](https://nextcloud.nrp-nautilus.io/s/Ecr6ZHokBStAgST) and put the checkpoint in the corresponding `example/<category>` directory, e.g. it should look like `examples/laptop/laptop-asdf/Model_Parameters/1000.pth`.
 
 The dataset is structured as follows, `<dataset_name>` can be, e.g. `shape2motion/shape2motion-1-view/shape2motion-2-view/rbo` :
 
